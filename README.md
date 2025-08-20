@@ -1,4 +1,22 @@
-# Summit-analysis (last edit: 6/27/25 by JT)
+# Summit-analysis (last update: 8/20/25 by JT)
+> Code for analyzing the results of MARGO-tracked behavioral experiments, primarily for summiting in flies infected with *E. muscae*
+>
+> Elya lab 2025
+
+## Table of Contents
+
+- [Installation](#installation)
+- [TBD]()
+
+## Installation
+
+If you have Anaconda and the summiting_environment.yml file installed, the following line of code will create an environment with compatible packages for running the analysis pipeline:
+
+```
+$ conda env create -f summiting_environment.yml
+```
+
+Previous README (to be changed soon!):
 This code is a work in progress! It is currently in a usable, but not finished, state for analyzing summiting data. Check back soon for a much better looking README file and better instuctions, as well as revised code.
 
 Current known issues:
