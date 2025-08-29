@@ -1,5 +1,5 @@
 # Summit-analysis
-> last update: 8/21/25 by JT
+> last update: 8/29/25 by JT
 > 
 > Code for analyzing the results of MARGO-tracked behavioral experiments, primarily for summiting in flies infected with *E. muscae*
 >
