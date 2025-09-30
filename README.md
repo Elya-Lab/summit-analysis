@@ -8,6 +8,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
+- [General summit analysis steps]
 - [TBD]()
 
 ## Installation
@@ -17,9 +18,28 @@ If you have Anaconda and the summiting_environment.yml file installed, the follo
 ```
 $ conda env create -f summiting_environment.yml
 ```
+## General summit analysis steps: 
 
+1. Once MARGO has finished running, retrieve address of designated MARGO output directory. This directory should contain a *.mat file with your tracking data.
 
+2. Run convertMargo in MATLAB to generate the margoConvert.mat file required in future sets. 
+```
+convertMargo({'DIR/*.mat'}) # where DIR is the output directory where your Margo *.mat file lives. Include the full name of your *.mat file.
+```
+3. Retrieve the MARGO output directory for downstream analysis in your local environment. This directory will contain a subdirectory named raw_data that contains the raw tracking output.
+The output directory will also contain your *.mat and *_margoConvert.mat files. These are required for downstream analysis. 
 
+4. Score your boards and create a survival_data sheet exactly as described in the google doc [Protocol: Summitting Data Analysis]. Place this survival_data.xls sheet in the MARGO output folder in your local environment. 
+
+5. Retrieve and open blindTod.m in MATLAB. This script has several dependencies - all should be in the same directory as the blindTod.m script. You can currently find it here: https://github.com/Elya-Lab/BlindTOD/tree/main/Code
+
+6. In MATLAB, load your *_margoConvert.mat file, and run execute blindTod. You will need to manually score time of last movement in the activity traces as they appear in your screen. The scored times will be populated into your survival_data.xls sheet by blindTod. Once blindTod is done running, you will have
+two new *.mat files: *_margoConvert_autodenoise.mat and *_last12hours.mat. 
+
+7. Follow directions described above to create the summit analysis environment in your computer. This will ensure all necessary python packages are installed.
+
+8. Open Multi-File Multi-Condition MARGO Convert Summiting Graph Creator.ipynb and set your experiment/analysis parameters. Make sure to declare the MARGO output directory where your *.mat and survival_data sheet live.
+	Running this script will provide you with y-position and speed graphs for each of your experimental conditions, for up to 12 hours before death, and for the complete run.      
 
 Previous README (to be changed soon!):
 
