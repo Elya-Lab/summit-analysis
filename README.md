@@ -1,9 +1,9 @@
 # Summit-analysis
-> last update: 12/9/25 by JT
+> last update: 1/14/26 by JT
 > 
 > Code for analyzing the results of MARGO-tracked behavioral experiments, primarily for summiting in flies infected with *E. muscae*
 >
-> Elya lab 2025
+> Elya lab 2026
 
 ## Table of Contents
 
