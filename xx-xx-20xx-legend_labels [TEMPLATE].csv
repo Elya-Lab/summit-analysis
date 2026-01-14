@@ -1,0 +1,3 @@
+OldName,CustomName,LineColor,,
+all - Cand2 - M,Male Candidate 2 (Bl),#41d8f4,,"READ THIS!: to use this file, you really have to know your data. It is mostly for people who are annoyed with having to type the same custom legend labels over and over. Delete this cell and replace the examples to use. OldName is the name the code defaults to your group. CustomName is what you want to call it. LineColor is what color you want associated with that group."
+all - Cswf - F,Female Cswf,gray,,
